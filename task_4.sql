@@ -1,6 +1,6 @@
 USE alx_book_store;
 
--- Print full description of the table BOOKS
+-- Print full description of the table Books
 SELECT 
     COLUMN_NAME,
     COLUMN_TYPE,
@@ -10,5 +10,5 @@ SELECT
     EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'alx_book_store' 
-  AND TABLE_NAME = 'BOOKS'
+  AND TABLE_NAME = 'Books'
 ORDER BY ORDINAL_POSITION;
