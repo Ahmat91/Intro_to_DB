@@ -6,6 +6,8 @@
 -- Generation Time: Oct 16, 2025 at 08:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+USE alx_book_store;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
