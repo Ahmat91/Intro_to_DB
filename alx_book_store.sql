@@ -120,11 +120,13 @@ INSERT INTO `Orders` (`order_id`, `customer_id`, `order_date`) VALUES
 -- Table structure for table `order_details`
 --
 
-CREATE TABLE `Order_Details` (
-  `orderdetailid` int(11) NOT NULL,
-  `order_id` int(11) DEFAULT NULL,
-  `book_id` int(11) DEFAULT NULL,
-  `quantity` double NOT NULL
+CREATE TABLE Order_Details (
+  orderdetailid INT NOT NULL,
+  order_id INT,
+  book_id INT,
+  quantity DOUBLE NOT NULL,
+  FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+  FOREIGN KEY (book_id) REFERENCES Books(book_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
