@@ -78,11 +78,11 @@ INSERT INTO `Books` (`book_id`, `title`, `author_id`, `price`, `publication_date
 -- Table structure for table `customers`
 --
 
-CREATE TABLE `Customers` (
-  `customer_id` int(11) NOT NULL,
-  `customer_name` varchar(215) NOT NULL,
-  `email` varchar(215) NOT NULL,
-  `address` text NOT NULL
+CREATE TABLE Customers (
+  customer_id INT NOT NULL,
+  customer_name VARCHAR(215) NOT NULL,
+  email VARCHAR(215) NOT NULL,
+  address TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
